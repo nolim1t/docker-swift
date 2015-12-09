@@ -1,5 +1,5 @@
-FROM phusion/baseimage:0.9.17
-MAINTAINER Haris Amin <aminharis7@gmail.com>
+FROM ubuntu:14.04
+MAINTAINER Barry Teoh <barry@barryteoh.com>
 
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
