@@ -1,9 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Barry Teoh <barry@barryteoh.com>
 
-# Use baseimage-docker's init system.
-CMD ["/sbin/my_init"]
-
 ENV SWIFT_VERSION 2.2-SNAPSHOT-2015-12-01-b
 ENV SWIFT_PLATFORM ubuntu14.04
 
