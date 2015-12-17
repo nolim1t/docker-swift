@@ -1,12 +1,12 @@
 FROM ubuntu:14.04
 MAINTAINER Barry Teoh <barry@barryteoh.com>
 
-ENV SWIFT_VERSION 2.2-SNAPSHOT-2015-12-01-b
+ENV SWIFT_VERSION 2.2-SNAPSHOT-2015-12-10-a
 ENV SWIFT_PLATFORM ubuntu14.04
 
 # Install related packages
 RUN apt-get update && \
-    apt-get install -y build-essential wget clang libedit-dev python2.7 python2.7-dev libicu52 rsync && \
+    apt-get install -y build-essential wget clang libedit-dev python2.7 python2.7-dev libicu52 rsync libxml2 git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
